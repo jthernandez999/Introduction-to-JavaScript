@@ -113,10 +113,16 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
+function hungryDog(age, bodyWeight){
+    if (age >= 12 && bodyWeight <= 5 ){
+      console.log (bodyWeight * .05);
+    } else if (age >= 12 && bodyWeight >= 6 || bodyweight <=10){
+      console.log (bodyWeight * .04);
+    } else if (age >= 12 && bodyWeight >= 11 || bodyWeight <=16){
+      console.log (bodyWeight * .03);
   }
-
+}
+console.log(hungryDog(12, 15));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -141,10 +147,34 @@ Use the game function below to do the following:
 */
 
 function game(user, computer){
-    /*add your code here*/
+    
+
+    const computerChoice = ["rock", "paper", "scissors"]; 
+    const computerNumber =  math.floor (Math.random() * 3); 
+
+computerChoice[computerNumber];
+
+if (computerChoice = userChoice){
+  return "It's a tie";
+}
+
+else {
+    if (computerChoice === "rock") {
+    if (userChoice === "paper"){
+      return "you lose!"; 
+    }
+else {
+      return "you win!";
 }
   
-  
+ }
+
+}
+
+}
+console.log(game(1, rock));  
+
+
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
