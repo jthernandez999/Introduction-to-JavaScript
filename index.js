@@ -155,8 +155,16 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-function game(user, computer){
-    
+let computerChoice = Math.random();
+
+function game(userChoice, computerChoice){
+    if (computerChoice >= 0 && computerChoice <= 0.33){
+      computerChoice = "Rock";
+    } else if (computerChoice >= 0.34 && computerChoice <= 0.67) {
+      computerChoice = "Paper";
+    } else {
+      computerChoice = "Scissor";
+    }
 
 }
 
@@ -205,7 +213,8 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(/*add your code here*/){
-        /*add your code here*/
+        for (let i = 0; i < 5; i++)
+        console.log(i);
   }
 
 
@@ -223,11 +232,21 @@ Using the grade function below do the following:
    60-69 should return 'you got a D'
    below should return 'you got an F'
 */
-  
-function grade(/*Your Code here */){
-  /*Your Code here */
+
+function grade(myGrade){
+  if (myGrade >= 90 && myGrade <= 100) {
+    return ("you got an A");
+  } else if (myGrade >=80 && myGrade <= 89) {
+    return ("you got a B");
+  } else if (myGrade >= 70 && myGrade <= 79) {
+    return ("you got a C");
+  } else if (myGrade >= 60 && myGrade <= 69) {
+    return ("you got a D");
+  } else {
+    return ("you got an F");
   }
-  
+}
+  console.log(grade(60));
   
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
