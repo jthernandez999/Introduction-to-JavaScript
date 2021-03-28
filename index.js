@@ -114,16 +114,28 @@ Use the hungryDog function and feeding requirements below to do the following:
 */  
 
 function hungryDog(age, bodyWeight){
-    if (age >= 12 && bodyWeight <= 5 ){
-      console.log (bodyWeight * .05);
-    } else if (age >= 12 && bodyWeight >= 6 || bodyweight <=10){
-      console.log (bodyWeight * .04);
-    } else if (age >= 12 && bodyWeight >= 11 || bodyWeight <=16){
+    if (bodyWeight > 15 && age >= 1 ){
+      console.log (bodyWeight * .02);
+    } else if (bodyWeight >= 11 && bodyWeight <=15 && age >= 1){
       console.log (bodyWeight * .03);
+    } else if (bodyWeight >= 10 && bodyWeight <= 6 && age >= 1){
+      console.log (bodyWeight * .04);
+  }   else if (bodyWeight >= 6 && bodyWeight <= 10 && age >=1) {
+      console.log (bodyWeight * .04);
+  }   else if (bodyWeight <=5 && age >= 1){
+      console.log(bodyWeight * .05);
+  }   else if (age <= 0.916 && age <=1){
+      console.log(0.4 * age);
+  }   else if (age <=0.583 && age >=0.333){
+      console.log(age * .05);
+  }   else if (age >= 0.166 && age <=0.333) {
+      console.log(age * 10);
   }
 }
-console.log(hungryDog(12, 15));
+console.log(hungryDog(1, 15));
 
+
+ 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
