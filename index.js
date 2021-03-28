@@ -64,11 +64,9 @@ Do the following:
 */
 
 function multiply(a, b){
-    const total = a * b;
-    return total;
-  }
-console.log(multiply(3,6));
-
+      return a * b;
+}
+console.log(multiply(5,7));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -83,7 +81,7 @@ Do the following:
 function dogYears(age){
    return age * 7; 
 }
-console.log(dogYears(2));
+console.log(dogYears(5));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -113,29 +111,28 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(age, bodyWeight){
+function hungryDog(bodyWeight, age){
     if (bodyWeight > 15 && age >= 1 ){
-      console.log (bodyWeight * .02);
+      return (bodyWeight * .02);
     } else if (bodyWeight >= 11 && bodyWeight <=15 && age >= 1){
-      console.log (bodyWeight * .03);
+      return(bodyWeight * .03);
     } else if (bodyWeight >= 10 && bodyWeight <= 6 && age >= 1){
-      console.log (bodyWeight * .04);
-  }   else if (bodyWeight >= 6 && bodyWeight <= 10 && age >=1) {
-      console.log (bodyWeight * .04);
+      return (bodyWeight * .04);
+  }   else if (bodyWeight >= 6 && bodyWeight <= 10 && age >=1){
+      return (bodyWeight * .04);
   }   else if (bodyWeight <=5 && age >= 1){
-      console.log(bodyWeight * .05);
+      return (bodyWeight * .05);
   }   else if (age <= 0.916 && age <=1){
-      console.log(0.4 * age);
+      return (0.4 * age);
   }   else if (age <=0.583 && age >=0.333){
-      console.log(age * .05);
-  }   else if (age >= 0.166 && age <=0.333) {
-      console.log(age * 10);
+      return (age * .05);
+  }   else if (age >= 0.166 && age <=0.333){
+      return(age * 10);
   }
 }
-console.log(hungryDog(1, 15));
+console.log(hungryDog(15,1));
 
 
- 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -161,30 +158,7 @@ Use the game function below to do the following:
 function game(user, computer){
     
 
-    const computerChoice = ["rock", "paper", "scissors"]; 
-    const computerNumber =  math.floor (Math.random() * 3); 
-
-computerChoice[computerNumber];
-
-if (computerChoice = userChoice){
-  return "It's a tie";
 }
-
-else {
-    if (computerChoice === "rock") {
-    if (userChoice === "paper"){
-      return "you lose!"; 
-    }
-else {
-      return "you win!";
-}
-  
- }
-
-}
-
-}
-console.log(game("paper", "rock"));  
 
 
 
@@ -200,9 +174,9 @@ Using the miles function below do the following:
 */
 
 function miles (kilometers){
- return kilometers * 0.62137;
+ return kilometers * 0.621371;
 }
- console.log(miles(88));
+ console.log(miles(10));
 
 
 
@@ -215,9 +189,9 @@ Using the feet function below do the following:
 */
 
 function feet(centimeters){
-    return centimeters * 0.032808;
+    return centimeters / 30.48;
   }
-console.log(feet(300)); 
+console.log(feet(160)); 
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
