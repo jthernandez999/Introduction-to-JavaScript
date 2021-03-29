@@ -17,9 +17,16 @@ Do the following:
 
    HINT: no function required
 */
-let age = 30; 
-var votingAge = (age > 18) ? "true":
+
+let votingAge = 18;
+if (votingAge >= 18){
+  console.log ("true");
+}
+
 console.log(votingAge);
+
+
+// Please write your answer in the line above.
 /*
 Task 1b - Values
 
@@ -167,7 +174,7 @@ function game(userChoice, computerChoice){
     }
 
 }
-
+console.log(game);
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -212,11 +219,12 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        for (let i = 0; i < 5; i++)
-        console.log(i);
+function annoyingSong(number){
+        for (let i = number; i >= 1; i--) {
+        return(`${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i-1} bottles of soda on the wall`);
+}
   }
-
+console.log(annoyingSong(5));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -246,7 +254,7 @@ function grade(myGrade){
     return ("you got an F");
   }
 }
-  console.log(grade(60));
+  console.log(grade(100));
   
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
