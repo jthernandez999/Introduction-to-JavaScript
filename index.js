@@ -162,19 +162,25 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-let computerChoice = Math.random();
+let computerChoice = Math.floor(Math.random()*3);
 
 function game(userChoice, computerChoice){
-    if (computerChoice >= 0 && computerChoice <= 0.33){
-      computerChoice = "Rock";
-    } else if (computerChoice >= 0.34 && computerChoice <= 0.67) {
-      computerChoice = "Paper";
-    } else {
-      computerChoice = "Scissor";
+    if (computerChoice = 0){
+      return("rock");
+    } else if (computerChoice = 1) {
+      return ("you lose!");
+    } else if (computerChoice =2) {
+     return("scissors");
+    } else if (computerChoice = userChoice){
+    return("it's a tie");
+    }else if (computerChoice > userChoice){
+      return("you lose!");
+    } else if (computerChoice < userChoice) {
+      return ("");
     }
-
+    return(game());
 }
-console.log(game);
+console.log(game());
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
